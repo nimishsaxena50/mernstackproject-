@@ -28,13 +28,20 @@ mongoose
 const app = express()
 
 // Middleware to handle cors
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://mernstackproject-jrbr.vercel.app"
+];
+
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://mernstackproject-jrbr.vercel.app"
-  ],
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE"]
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
 }));
 /*{
     origin: process.env.FRONT_END_URL || "http://localhost:5174",
