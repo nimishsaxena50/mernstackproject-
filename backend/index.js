@@ -29,7 +29,7 @@ const app = express()
 
 // Middleware to handle cors
 app.use(cors({
-    origin: "http://localhost:5173", // Tumhara FRONT_END_URL
+    origin:"https://project-manager-8cne.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
