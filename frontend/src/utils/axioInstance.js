@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const BASE_URL = "https://project-manager-8cne.onrender.com"
+const BASE_URL = "https://project-manager-8cne.onrender.com/api"
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
