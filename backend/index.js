@@ -29,9 +29,12 @@ const app = express()
 
 // Middleware to handle cors
 app.use(cors({
-    origin:"https://mernstackproject-nbwx.vercel.app",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"]
+  origin: [
+    "http://localhost:5173",
+    "https://mernstackproject-jrbr.vercel.app"
+  ],
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 /*{
     origin: process.env.FRONT_END_URL || "http://localhost:5174",
