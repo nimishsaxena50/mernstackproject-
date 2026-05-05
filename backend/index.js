@@ -29,7 +29,7 @@ const app = express()
 
 // Middleware to handle cors
 app.use(cors({
-    origin:"https://project-manager-8cne.onrender.com",
+    origin:"https://mernstackproject-nbwx.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
