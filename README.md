@@ -36,11 +36,10 @@ npm run start
 
 ## 🔑 Environment Variables
 Create `.env` file in backend:
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret
+MONGO_URI="mongodb+srv://saxenanimish034_db_user:nVMgzO819ViAYT1O@cluster0.qauynua.mongodb.net/myDatabase?retryWrites=true&w=majority"
+JWT_SECRET="mySuperSecretKey12345"
+ADMIN_JOIN_CODE=123456
 
-## 📷 Screenshots
-(Add screenshots here later)
 
 ## 👨‍💻 Author
 Nimish Saxena
